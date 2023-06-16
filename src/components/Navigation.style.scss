@@ -1,0 +1,46 @@
+@use '../styles/variables' as *;
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  color: $text-white;
+  padding-top: 3.68rem;
+  font-size: 1.4rem;
+  margin-bottom: 10rem;
+
+  a {
+    color: $text-white;
+  }
+}
+
+.logo {
+  margin-right: 13.3rem;
+}
+
+.nav {
+  text-transform: capitalize;
+  font-weight: medium;
+
+  &__list {
+    display: flex;
+    gap: 4.7rem;
+  }
+
+  &__right {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    font-weight: bold;
+
+    a {
+      text-transform: uppercase;
+    }
+  }
+
+  &__started {
+    background-color: $btn-bg-primary;
+    padding: 1.1rem 1.9rem;
+    border-radius: 3px;
+  }
+}

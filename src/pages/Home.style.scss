@@ -1,0 +1,42 @@
+@use '../styles/variables' as *;
+
+.header {
+  background-color: $header-bgcolor;
+  padding: 0 6rem;
+
+  &__bottom {
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+  }
+
+  &__text-box {
+    padding: 4rem 0;
+  }
+
+  &__text {
+    color: $text-white;
+    font-weight: bold;
+    font-size: 5.1rem;
+    line-height: 6.9rem;
+    max-width: 41.5rem;
+  }
+
+  &__text-small {
+    font-size: 1.4rem;
+    color: $text-light-gray;
+  }
+}
+
+.exp {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  &__text-box {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    text-align: flex-start;
+    gap: 2rem;
+  }
+}
